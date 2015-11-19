@@ -4,6 +4,7 @@
 
 #### A) Introduction to CartoDB
 
+Learn how to quickly create a map visualisation using Carto DB.
 Using Mars data (or Earth)
 
 - [ ] create a cartodb account
@@ -11,6 +12,8 @@ Using Mars data (or Earth)
 - [ ] create a new map
 - [ ] pick a Mars basemap
 - [ ] have fun creating your viz!
+
+**Links**
 
 http://academy.cartodb.com  
 http://docs.cartodb.com/tutorials  
@@ -40,7 +43,7 @@ https://github.com/andycasey/ads/
 https://github.com/CartoDB/cartodb-python
 
 CartoDB SQL API write call example:
-```
+`
 https://whereonmars.cartodb.com/api/v2/sql?q=INSERT INTO table_name (the_geom, observation) VALUES (ST_GeomFromText(’POINT(-71.2 42.5)’, 4326),'rare bird spotted')&api_key=<API_KEY>
-```
+`
 [Reset API Key](https://whereonmars.cartodb.com/your_apps)
