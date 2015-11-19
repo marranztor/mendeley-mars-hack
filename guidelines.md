@@ -1,16 +1,15 @@
 
 ## Hack guidelines/notes
 
-Two main activities
+Two main activities:
 
-- [Introduction and mapping with CartoDB]
+- [Introduction to making a map (of Mars) with CartoDB]
 - [Visualising scientific publications on a map](#visualising-scientific-publications-on-a-map)
 
-#### Introduction to CartoDB
+#### Introduction to making a map (of Mars) with CartoDB
 
-Learn to create and share maps on the web, and visualize geospatial data using Carto DB.
-
-Using Mars data (or Earth)
+Learn to create and share maps on the web, and visualize geospatial data using CartoDB.  
+Use CartoDB datasets library and/or WhereOnMars datasets.
 
 Reference tutorial: [Making your First Map](http://academy.cartodb.com/courses/beginners-course/making-your-first-map/)
 
@@ -20,26 +19,26 @@ Reference tutorial: [Making your First Map](http://academy.cartodb.com/courses/b
 - [ ] pick a Mars basemap (see link below)
 - [ ] have fun creating your viz!
 
-**Links**
+##### Learning materials
 
-Learning materials:
+- http://academy.cartodb.com  
+- http://docs.cartodb.com/tutorials  
+- http://cartodb.github.io/training 
 
-   - http://academy.cartodb.com  
-   - http://docs.cartodb.com/tutorials  
-   - http://cartodb.github.io/training 
+##### Mars datasets
 
-Mars datasets:
+- https://github.com/nmanaud/whereonmars/wiki/CartoDB-Datasets  
+- https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map
 
-    - https://github.com/nmanaud/whereonmars/wiki/CartoDB-Datasets  
-    - https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map
+##### Mars basemaps
 
-Mars basemaps:
-
-    - https://github.com/nmanaud/whereonmars/wiki/Basemaps  
+- https://github.com/nmanaud/whereonmars/wiki/Basemaps  
 
 #### Visualising scientific publications on a map
 
-- [ ] download nomenclature  
+Exploring the idea of visualising (Mars-related) scientific publications on a map
+
+- [ ] download Mars nomenclature: http://planetarynames.wr.usgs.gov/Page/MARS/target
 - [ ] query Mendeley database  
 - [ ] query ADS database  
 - [ ] build a geo-table containing for each publication the associated location on Mars (point as geom)  
