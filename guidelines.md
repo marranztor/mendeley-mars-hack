@@ -1,8 +1,12 @@
 
 ## Hack guidelines/notes
 
+Two main activities
 
-#### A) Introduction to CartoDB
+- [
+- [Visualising scientific publications on a map](#visualising-scientific-publications-on-a-map)
+
+#### Introduction to CartoDB
 
 Learn how to quickly create a map visualisation using Carto DB.
 Using Mars data (or Earth)
@@ -15,14 +19,19 @@ Using Mars data (or Earth)
 
 **Links**
 
-http://academy.cartodb.com  
-http://docs.cartodb.com/tutorials  
-http://cartodb.github.io/training  
-https://github.com/nmanaud/whereonmars/wiki/Basemaps  
-https://github.com/nmanaud/whereonmars/wiki/CartoDB-Datasets  
-https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map
+Learning materials:
 
-#### B) Visualising scientific publications on a map
+- http://academy.cartodb.com  
+- http://docs.cartodb.com/tutorials  
+- http://cartodb.github.io/training 
+
+Mars data:
+
+- https://github.com/nmanaud/whereonmars/wiki/Basemaps  
+- https://github.com/nmanaud/whereonmars/wiki/CartoDB-Datasets  
+- https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map
+
+#### Visualising scientific publications on a map
 
 - [ ] download nomenclature  
 - [ ] query Mendeley database  
