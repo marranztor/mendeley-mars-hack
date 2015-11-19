@@ -3,7 +3,7 @@
 
 Two main activities:
 
-- [Introduction to making a map (of Mars) with CartoDB]
+- [Introduction to making a map (of Mars) with CartoDB](#introduction-to-making-a-map-of-mars-with-cartodb)
 - [Visualising scientific publications on a map](#visualising-scientific-publications-on-a-map)
 
 #### Introduction to making a map (of Mars) with CartoDB
@@ -13,48 +13,52 @@ Use CartoDB datasets library and/or WhereOnMars datasets.
 
 Reference tutorial: [Making your First Map](http://academy.cartodb.com/courses/beginners-course/making-your-first-map/)
 
-- [ ] create a cartodb account (cartodb.com)
-- [ ] find a dataset to visualise (see links below)
-- [ ] create a new map
-- [ ] pick a Mars basemap (see link below)
-- [ ] have fun creating your viz!
+- [ ] Create a cartodb account: http://cartodb.com
+- [ ] Find a dataset to visualise (see links below)
+- [ ] Create a new map
+- [ ] Pick a Mars basemap (see link below)
+- [ ] *Have fun creating your viz!*
 
 ##### Learning materials
 
-- http://academy.cartodb.com  
-- http://docs.cartodb.com/tutorials  
-- http://cartodb.github.io/training 
+http://academy.cartodb.com  
+http://docs.cartodb.com/tutorials  
+http://cartodb.github.io/training 
 
 ##### Mars datasets
 
-- https://github.com/nmanaud/whereonmars/wiki/CartoDB-Datasets  
-- https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map
+https://github.com/nmanaud/whereonmars/wiki/CartoDB-Datasets  
+https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map
 
 ##### Mars basemaps
 
-- https://github.com/nmanaud/whereonmars/wiki/Basemaps  
+https://github.com/nmanaud/whereonmars/wiki/Basemaps  
 
 #### Visualising scientific publications on a map
 
 Exploring the idea of visualising (Mars-related) scientific publications on a map
 
-- [ ] download Mars nomenclature: http://planetarynames.wr.usgs.gov/Page/MARS/target
-- [ ] query Mendeley database  
-- [ ] query ADS database  
-- [ ] build a geo-table containing for each publication the associated location on Mars (point as geom)  
-- [ ] visualise geo-table  
-- [ ] what do we see? patterns, issues, new ideas? (e.g.: using Mendeley API to bring a "social layer")  
-- [ ] what would make this useful to a researcher?  
+- [ ] Download Mars nomenclature: http://planetarynames.wr.usgs.gov/Page/MARS/target
+- [ ] Query ADS database: https://ui.adsabs.harvard.edu
+- [ ] Query Mendeley database  
+- [ ] Build a geo-table containing for each publication the associated location on Mars (point as geom)  
+- [ ] Visualise geo-table  
+- [ ] What do we see? patterns, issues, new ideas? (e.g.: using Mendeley API to bring a "social layer")  
+- [ ] What would make this useful to a researcher?  
+
+##### Mendeley API
+
+http://dev.mendeley.com
 
 ##### ADS API
 
 https://pypi.python.org/pypi/ads  
 https://github.com/adsabs/adsabs-dev-api  
-https://github.com/andycasey/ads/  
+https://github.com/andycasey/ads
 
 ##### CartoDB API
 
-http://docs.cartodb.com/cartodb-platform/sql-api/
+http://docs.cartodb.com/cartodb-platform/sql-api
 https://github.com/CartoDB/cartodb-python
 
 *CartoDB SQL API write call example:*
