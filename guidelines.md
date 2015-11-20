@@ -58,7 +58,7 @@ https://github.com/andycasey/ads
 
 ##### CartoDB API
 
-http://docs.cartodb.com/cartodb-platform/sql-api
+http://docs.cartodb.com/cartodb-platform/sql-api  
 https://github.com/CartoDB/cartodb-python
 
 *CartoDB SQL API write call example:*
