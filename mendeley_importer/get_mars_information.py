@@ -23,8 +23,9 @@ def get_list_features():
     return features
 
 def query_documents(session, feature):
-    feature = "\"%s\" AND mars" % (feature)
-    search = session.catalog.search(feature)
+    feature = feature.encode('ascii', 'ignore')
+    query = "\"%s\" AND mars" % (feature)
+    search = session.catalog.search(query, view="all")
     page = search.list()
 
     documents = []
@@ -32,6 +33,16 @@ def query_documents(session, feature):
     count = 0
     for document in page.items:
         authors=render_authors(document.authors)
+
+        if (feature.lower() not in document.title.lower()) and (feature.lower() not in document.abstract.lower()):
+            # print "Feature :", feature
+            # print "Title   :",document.title
+            # print "Abstract:",document.abstract
+            print "Skips!"
+            continue
+        else:
+            print "Continues!"
+
         print authors
         print "Title:",document.title,"Year:",document.year
 
@@ -41,7 +52,8 @@ def query_documents(session, feature):
         d['authors'] = render_authors(document.authors)
         d['title'] = document.title
         d['link'] = document.link
-        # d['reader_count'] = document.reader_count
+        d['reader_count'] = document.reader_count
+        print d
 
         documents.append(d)
         count += 1
@@ -54,7 +66,7 @@ def query_documents(session, feature):
 def insert_documents(cl, feature_name, the_geom, documents):
     for d in documents:
         try:
-            sql = "INSERT INTO mendeley_mars_hack (feature_name, link, the_geom, title, authors, year) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')" % (feature_name, d['link'], the_geom, d['title'], d['authors'], d['year'])
+            sql = "INSERT INTO mendeley_mars_hack (feature_name, link, the_geom, title, authors, year, reader_count) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (feature_name, d['link'], the_geom, d['title'], d['authors'], d['year'], d['reader_count'])
             sql = sql.encode('ascii', 'ignore')
             print sql
             cl.sql(sql)
