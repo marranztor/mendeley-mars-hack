@@ -4,7 +4,7 @@ Nomenclature dataset:
 
 `https://whereonmars.cartodb.com/tables/exols_mars_nomenclature/public`
 
-`https://whereonmars.cartodb.com/api/v2/sql?q=SELECT feature_name public.exols_mars_nomenclature`
+`https://whereonmars.cartodb.com/api/v2/sql?q=select feature_name from public.exols_mars_nomenclature`
 
 Output dataset:
 
